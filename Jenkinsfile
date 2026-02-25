@@ -1,5 +1,6 @@
 pipeline {
     agent none
+    node dotnet
     stages {
         stage('Build') { 
             steps {
