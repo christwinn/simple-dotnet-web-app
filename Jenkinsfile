@@ -1,7 +1,7 @@
 pipeline {
     agent none
-    node dotnet
     stages {
+        node('dotnet')
         stage('Build') { 
             steps {
                 sh 'dotnet restore' 
